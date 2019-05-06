@@ -1,7 +1,7 @@
     <footer class="container">
         <div class="site-footer" role="contentinfo">
             <div class="copyright left mobile-block">
-                    © 2015
+                    &copy; <span id="cpr_year">--</span>
                     <span title="{{ site.author}}">{{ site.author }}</span>
                     <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
             </div>
@@ -34,13 +34,16 @@
     <script src="{{ site.url }}/assets/js/prism.js"></script>
     <link rel="stylesheet" href="{{ site.url }}/assets/css/globals/prism.css">
     <script>
-      jQuery(document).ready(function($) {
-        // geopattern
-        $('.geopattern').each(function(){
-          $(this).geopattern($(this).data('pattern-id'));
-        });
-       // hljs.initHighlightingOnLoad();
-      });
+		jQuery(document).ready(function($) {
+			// geopattern
+			$('.geopattern').each(function(){
+				$(this).geopattern($(this).data('pattern-id'));
+			});
+			// hljs.initHighlightingOnLoad();
+			var date=new Date;
+			var year=date.getFullYear(); 
+			$("#cpr_year").html(year);
+		});
     </script>
 
     {% if page.mermaid %}
