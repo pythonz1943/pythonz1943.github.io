@@ -2,12 +2,12 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://pythonz1943.github.io
+url: https://somehooks.github.io
 date_format: "ordinal"
-title: pythonz
-subtitle: "pythonz"
-description: "pythonz"
-keywords: pythonz
+title: somehooks
+subtitle: "somehooks"
+description: "somehooks"
+keywords: somehooks
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
@@ -18,9 +18,9 @@ side_bar_repo_limit: 5
 author: pythonz
 organization: 
 organization_url: 
-github_username: pythonz1943
+github_username: somehooks
 location: Qingdao, China
-email: sth.@gmail.com
+email: somehooks.@gmail.com
 
 # ---------------- #
 #    Navigation    #
